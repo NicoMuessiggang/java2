@@ -14,7 +14,7 @@
 <body>
 	<div class="container-lg">
 
-		<h1>Willkommen!!!</h1>
+		<h1>Willkommen!</h1>
 		<p><c:out value="${user}" /></p>
 
 		<table class="table table-dark table-striped">
