@@ -79,12 +79,6 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.google.cloud.sql</groupId>
-			<artifactId>mysql-socket-factory</artifactId>
-			<version>1.0.5</version>
-		</dependency>
-
-		<dependency>
 			<groupId>org.webjars</groupId>
 			<artifactId>bootstrap</artifactId>
 			<version>4.1.0</version>
@@ -105,6 +99,12 @@
 		<plugins>
 			<!-- [START gae_plugin] -->
 			<!-- Used to deploy to AppEngine Flexible -->
+            <plugin>
+                <groupId>com.google.appengine</groupId>
+                <artifactId>appengine-maven-plugin</artifactId>
+                <version>1.9.64</version>
+            </plugin>
+
 			<plugin>
 				<groupId>com.google.cloud.tools</groupId>
 				<artifactId>appengine-maven-plugin</artifactId>

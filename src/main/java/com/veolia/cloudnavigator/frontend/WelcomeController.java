@@ -10,8 +10,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class WelcomeController {
-	@Autowired
-	JdbcTemplate jdbcTemplate;
 
 	@RequestMapping("/_ah/health")
 	@ResponseBody
@@ -22,7 +20,6 @@ public class WelcomeController {
 
 	@RequestMapping("/")
 	public String loginMessage(HttpServletRequest request) {
-		jdbcTemplate.execute("show tables");
 		String email = request.getHeader("X-Goog-Authenticated-User-Email");
 		request.setAttribute("user", email);
 		return "welcome";
