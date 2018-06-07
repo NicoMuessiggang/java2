@@ -99,11 +99,11 @@
 		<plugins>
 			<!-- [START gae_plugin] -->
 			<!-- Used to deploy to AppEngine Flexible -->
-            <plugin>
-                <groupId>com.google.cloud.tools</groupId>
-                <artifactId>appengine-maven-plugin</artifactId>
-                <version>1.3.1</version>
-            </plugin>
+            <!--<plugin>-->
+                <!--<groupId>com.google.cloud.tools</groupId>-->
+                <!--<artifactId>appengine-maven-plugin</artifactId>-->
+                <!--<version>1.3.1</version>-->
+            <!--</plugin>-->
 
 			<plugin>
 				<groupId>com.google.appengine</groupId>
